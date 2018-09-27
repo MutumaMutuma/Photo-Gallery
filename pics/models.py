@@ -46,8 +46,17 @@ class Image(models.Model):
     image_name = models.CharField(max_length=30, blank=False)
     description = models.TextField(max_length=100, blank=False)
     category = models.ManyToManyField(Category)
-    pub_date = models.DateTimeField(auto_now=True)
+    pub_date_posted = models.DateTimeField(auto_now=True)
     location = models.ForeignKey(Location)
 
     def __str__(self):
        return self.image_name
+    # ordering data everytime we query the database might be very tedoius. It thus makes available a Meta subclass in any models to specify model-specific options.
+    # I used the - minus sign before the order by parameter. This returns the objects in reverse order.
+    class Meta:
+        ordering = ['-pub_date_posted']
+
+    def save_image(self):
+        self.save()
+
+    
