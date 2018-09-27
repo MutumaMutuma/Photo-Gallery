@@ -11,6 +11,12 @@ class Location(models.Model):
 
     def __str__(self):
        return self.location
+       
+    def save_locations(self):
+        self.save()
+
+    def delete_locations(self):
+        self.delete()
 
 class Category(models.Model):
 
@@ -22,7 +28,7 @@ class Category(models.Model):
 
     def __str__(self):
        return self.name
-
+    
 
 class Image(models.Model):
 
