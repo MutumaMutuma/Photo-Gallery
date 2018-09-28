@@ -42,7 +42,7 @@ class Image(models.Model):
     '''
     
     image = models.ImageField(upload_to='gallery/', blank=True)
-    image_url = models.TextField(blank=False)
+    
     image_name = models.CharField(max_length=30, blank=False)
     description = models.TextField(max_length=100, blank=False)
     category = models.ManyToManyField(Category)
@@ -61,3 +61,8 @@ class Image(models.Model):
 
     def delete_image(self):
         self.delete()
+    
+    @classmethod
+    def get_all(cls):
+        images = cls.objects.order_by('-post_date')
+        return images
