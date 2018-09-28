@@ -6,34 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-        <nav style="padding: 25px; background-color:#136F63" class="navbar navbar">
-                <div class="container-fluid">
-                  <div class="navbar-header">
-                    <button style="background-color: rgb(96, 218, 171);" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span> 
-                    </button>
-                    <a class="navbar-brand" href="{% url 'pics' %}"> <img src="http://gallery.wwdev1.com/wp-content/uploads/2015/08/galleryLogo.png" alt="" height="60px"></a>
-                  </div>
-                  <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav">
-                      
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                            <form class="navbar-form" role="search">
 
-                                    <div class="input-group">
-                                      <input type="text" class="form-control" placeholder="Search Category" name="category">
-                                      <div class="input-group-btn">
-                                        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-                                      </div>
-                                    </div>
-                          
-                            </form>
-                    </ul>
-                  </div>
+    <nav style="overflow: hidden; position: fixed; z-index: 1; top: 0; width: 100%; padding: 30px; background-color: black; background: linear-gradient(rgb(26, 159, 236), rgba(122, 34, 110, 0.5) );" class="navbar navbar-expand-lg ">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="{% url 'pics' %}"> <img style="float:left;" src="http://gallery.wwdev1.com/wp-content/uploads/2015/08/galleryLogo.png" alt="" height="60px"></a>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            
+          </ul>
+          <form class="navbar-form" role="search">
+
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search Category" name="category">
+                <div class="input-group-btn">
+                  <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
                 </div>
-        </nav>
+              </div>
+    
+          </form>
+        </div>
+      </nav>
+  
 </body>
 </html>

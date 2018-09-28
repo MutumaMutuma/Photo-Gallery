@@ -5,11 +5,9 @@ from django.db import models
 from .models import Image
 
 # Create your views here.
-def welcome(request):
-    return render(request, 'welcome.html')
 
 def mygallery(request):
     date = dt.date.today()
     photos = Image.get_all()
-    return render(request, 'all-pics/myhomepics.html', {"date": date, "photos":photos})
+    return render(request, 'all-pics/home.html', {"date": date, "photos":photos})
 
