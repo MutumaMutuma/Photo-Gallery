@@ -13,13 +13,14 @@ def mygallery(request):
 
 def search_results(request):
 
-    if 'category' in request.GET and request.GET["category"]:
-        search_term = request.GET.get("category")
-        searched_categorys = Category.search_by_category(search_term)
+    if 'image' in request.GET and request.GET["image"]:
+        search_term = request.GET.get("image")
+        searched_images = Category.search_by_image(search_term)
+        images = Image.searched(query)
         message = f"{search_term}"
 
-        return render(request, 'all-pics/search.html',{"message":message,"categorys": searched_categorys})
+        return render(request, 'all-pics/search.html',{"message":message,"images": searched_images})
 
     else:
-        message = "You haven't searched for any term"
+        message = "You haven't searched for any Image Category"
         return render(request, 'all-pics/search.html',{"message":message})

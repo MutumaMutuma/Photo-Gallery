@@ -1,44 +1,21 @@
-{%extends 'all-news/base.html'%} 
+{%extends 'all-pics/base.html'%}
+
 {% block content %}
-<div class="container">
+<div style=" padding-bottom: 130px; padding-top: 115px;" class="container">
 
   <div class="row">
-    {% if categorys%}
-      <h2>Found {{ categorys|length }} of searched term {{message}}</h2>
+    {% if images%}
+      <h2>Found {{ images|length }} of searched term {{message}}</h2>
     {% else %}
-      <h2> Found 0 categorys for the search term {{message}}</h2>
+      <h2> Found 0 images for the search term {{message}}</h2>
     {% endif %}
 
   </div>
 
   <div class="row">
 
-  {% if categorys %}
-    {% for category in categorys %}
-      <div class="col-sm-6 col-md-3">
-          <h1>{{category.title}}</h1>
-      </div>
-    {% endfor %}
-  {% endif %}
-  </div>
-</div>
-{% endblock %}{%extends 'all-news/base.html'%} 
-{% block content %}
-<div class="container">
-
-  <div class="row">
-    {% if categorys%}
-      <h2>Found {{ categorys|length }} of searched term {{message}}</h2>
-    {% else %}
-      <h2> Found 0 categorys for the search term {{message}}</h2>
-    {% endif %}
-
-  </div>
-
-  <div class="row">
-
-  {% if categorys %}
-    {% for category in categorys %}
+  {% if images %}
+    {% for category in images %}
       <div class="col-sm-6 col-md-3">
           <h1>{{category.title}}</h1>
       </div>

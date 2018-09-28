@@ -22,7 +22,7 @@
                             </div>
                     </div>
                     <div class="carousel-item">
-                        <img style="" src="http://agingwellwithmarjorie.ca/wp-content/uploads/2016/02/banner-bench-1600x500.jpg" alt="New York" width="1300" height="500">
+                        <img style="" src="https://pinacotecabrera.org/wp-content/uploads/2017/06/Pinacoteca-di-Brera-sala-34.jpg" alt="New York" width="1300" height="500">
                         <div class="carousel-caption d-none d-md-block">
                             <h1 style=" font-family: 'Oregano', cursive; padding-bottom: 230px;">LEWIS MUTUMA GALLERY</h1>
                             <p>All the best photos</p>
@@ -30,7 +30,7 @@
                     </div>
                     
                     <div class="carousel-item">
-                        <img src="https://www.stamisol.com/assets/image-cache/webmaster/header/farben-stamisol-membranen-header.c903ae8b.jpg" alt="Chicago" width="1300" height="500">
+                        <img src="https://3.bp.blogspot.com/-b-7UCfXQS64/Vub37fX7xiI/AAAAAAAAS_c/vm0NsMFXiNwB1kbQ-epkrBg4KzZwmoL8w/s1600/20160314_013b.png" alt="Chicago" width="1300" height="500">
                         <div class="carousel-caption d-none d-md-block">
                                 <h1 style="font-family: 'Oregano', cursive; padding-bottom: 230px;">LEWIS MUTUMA GALLERY</h1>
                                 <p>All the best photos</p>
@@ -57,7 +57,7 @@
                 </a> 
             </div>
 
-                    <div class="modal fade" id="{{photo.id}}">
+                    <div style="background-image:url(https://www.desktopbackground.org/p/2011/06/12/217926_color-splash-creative-hd-bonny-wallpapers-free-hd-wallpapers_1920x1200_h.jpg) ;" class="modal fade" id="{{photo.id}}">
                         <div class="modal-dialog modal-dialog-centered"style="max-width: 100px!important;" role="document">
                         <div class="modal-content">
                             <div class="card" style="width:400px">
@@ -65,12 +65,17 @@
                                     <div class="col-md-6">
                                         <h4 class="card-title">{{ photo.image_name }}</h4>
                                     </div>
-                                    <div class="col-md-6">
-                                            {{ photo.image.url }}
-                                        {% for category in photos.category%}
-                                            <h4 class="card-title">{{ photo.category }}</h4>
-                                        {% endfor%}
-                                    </div>
+                                       
+                                    <div class="contact col-md-6" style="padding: 0px; max-width: 200px; margin: 0px auto;">
+                                        <div class="btn-group">
+                                            <a class="btn btn-primary" href="#">Copy</a>
+                                            <button type="button" class="btn btn-default btn-copy js-tooltip js-copy" data-toggle="tooltip" data-placement="bottom" data-copy="lewis" title="Copy to clipboard">
+                                                        
+                                            <svg style="width: 16px; height: 16px; padding: 0; margin: 0; vertical-align: middle;" class="icon"><img src=""></svg>
+                                            </button>
+                                        </div>
+                                    </div> 
+                                    
                                 </div>
                                 
                                 <img class="card-img-top" src="{{ photo.image.url }}" alt="Card image" style="width:100%">
@@ -78,8 +83,10 @@
                                     
                                     <p style="font-family: 'Lato', serif" class="card-text">description : {{ photo.description }}</p>
                                     <p>{{ photo.location }}</p>
+                                    
                                     <button type="button" class="btn btn-success" onclick="copyToClipboard('{{photo.id}}')">Copy Link</button>
                                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                    
                                 </div>
                                 
                                 </div>
