@@ -41,7 +41,7 @@ class Image(models.Model):
     Images model
     '''
     
-    image = models.ImageField(upload_to='gallery/', blank=True)
+    image = models.ImageField(upload_to='photos/')
     
     image_name = models.CharField(max_length=30, blank=False)
     description = models.TextField(max_length=100, blank=False)
@@ -64,5 +64,10 @@ class Image(models.Model):
     
     @classmethod
     def get_all(cls):
-        images = cls.objects.order_by('-post_date')
+        images = cls.objects.all()
+        return images
+
+    @classmethod
+    def filter_category(cls,query):
+        images = cls.objects.filter(category__name=query)
         return images
