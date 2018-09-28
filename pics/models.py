@@ -71,3 +71,8 @@ class Image(models.Model):
     def filter_category(cls,query):
         images = cls.objects.filter(category__name=query)
         return images
+
+    @classmethod
+    def search_by_category(cls, query):
+        result = cls.objects.filter(category__icontains=query).order_by('-pub_date_posted')
+        return result
