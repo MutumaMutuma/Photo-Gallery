@@ -21,7 +21,9 @@ The user should be able to:
 + [x] Python3.6
 
 
-## Installation steps
+## Installation
+To install, follow the following instructions;
+
 ```bash
     $ git clone https://github.com/MutumaMutuma/Photo-Gallery.git
     $ cd Gallery
