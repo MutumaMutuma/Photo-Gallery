@@ -4,6 +4,9 @@
 
 <img src="/images/images/landingpage1.JPEG">
 
+<img src="/images/images/Landingpage2.JPEG">
+
+
 ## User stories
 
 The user should be able to:
