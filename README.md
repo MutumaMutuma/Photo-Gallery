@@ -1,5 +1,5 @@
 # Photo-Gallery
-
+A personal gallery application that I display my photos for others to see
 ## Application
 
 <img src="/images/images/landingpage1.JPEG">
