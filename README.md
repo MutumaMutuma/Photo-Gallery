@@ -17,3 +17,15 @@ The user should be able to:
 + [x] Copy a link to the photo to share with my friends.
 + [x] View photos based on the location they were taken.
 
+## Prerequisites
++ [x] Python3.6
+
+
+## Installation steps
+```bash
+    $ git clone https://github.com/MutumaMutuma/Photo-Gallery.git
+    $ cd Gallery
+    $ source virtual/bin/activate
+    Install all the necessary requirements by running pip install -r requirements.txt (Python 3.6).
+    $ ./manager.py runserver
+```
