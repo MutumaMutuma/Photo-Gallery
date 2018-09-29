@@ -1,5 +1,9 @@
 # Photo-Gallery
 
+## Application
+
+<img src="/images/images/landingpage1.JPEG">
+
 ## User stories
 
 The user should be able to:
@@ -9,3 +13,4 @@ The user should be able to:
 + [x] Search for different categories of photos. (ie. Travel, Food)
 + [x] Copy a link to the photo to share with my friends.
 + [x] View photos based on the location they were taken.
+

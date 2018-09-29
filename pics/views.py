@@ -24,3 +24,10 @@ def search_results(request):
     else:
         message = "You haven't searched for any Image Category"
         return render(request, 'all-pics/search.html',{"message":message})
+
+def location_of_imagge(request,loc):
+    '''
+    This will find images by location
+    '''
+    photos=Image.filter_location()
+    return render(request, 'image_location.html', {"photos": photos})
