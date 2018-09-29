@@ -1,6 +1,6 @@
 # Photo-Gallery
 
-##User stories
+## User stories
 
 The user should be able to:
 
