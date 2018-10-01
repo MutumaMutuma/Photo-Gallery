@@ -1,1 +1,1 @@
-web: gunicorn lewismutumagallery.wsgi
+web: gunicorn pics.wsgi
