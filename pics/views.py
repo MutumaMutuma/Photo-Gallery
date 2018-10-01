@@ -25,11 +25,11 @@ def search_results(request):
         message = "You haven't searched for any Image Category"
         return render(request, 'all-pics/search.html',{"message":message})
 
-def get_mombasa(request):
+def get_moringa(request):
     image_location = Image.mombasa()
     return render(request, 'image_location.html', {"images": image_location})
 
 
-def get_nairobi(request):
+def get_losangeles(request):
     image_location = Image.nairobi()
     return render(request, 'image_location.html', {"images": image_location})
