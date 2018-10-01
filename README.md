@@ -4,7 +4,7 @@ A personal gallery application that I display my photos for others to see
 * [Lewis Mutuma](https://mutumamutuma.github.io/Portfolio/)
 
 ## Application
-=====================================================================================
+
 <img src="/images/images/landingpage1.JPEG">
 
 <img src="/images/images/Landingpage2.JPEG">
