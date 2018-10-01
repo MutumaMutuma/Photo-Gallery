@@ -58,7 +58,7 @@
                                         <h4 class="card-title">{{ photo.image_name }}</h4>
                                     </div>
                                     <div class="col-md-6 col-sm-6">
-                                        <small class="badge badge-success">Posted {{photo.pub_date_posted|timesince}} ago</small>
+                                        <p style="font-family: 'Oregano', cursive;">Posted {{photo.pub_date_posted|timesince}} ago</p>
                                     </div>
                                        
                                 </div>
@@ -66,7 +66,7 @@
                                 <img class="card-img-top" src="{{ photo.image.url }}" alt="Card image" style="width:100%" id="{{ photo.image.url }}">
                                 <div style="width:100%" class="card-body">
                                     
-                                    <p style="font-family: 'Lato', serif" class="card-text">description : {{ photo.description }}</p>
+                                    <p style="font-family: 'Oregano', cursive;" class="card-text">description : {{ photo.description }}</p>
                                     <p>Location : {{ photo.location }}</p>
                                     
                                     <form>
