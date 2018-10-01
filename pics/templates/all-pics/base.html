@@ -12,7 +12,7 @@
     <title> Gallery </title>
   {% endif %}
   
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Oregano" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
@@ -23,7 +23,7 @@
     
     <link rel="stylesheet" href="{% static 'css/basepics.css' %}">
   {% endblock %}
-
+  
 </head>
 <body style="background-color: black;">
     {% include "navbar.html" %}
@@ -38,7 +38,35 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
      {% bootstrap_javascript %}
     {% endblock %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                
+            </div>
+            <div class="col-md-8">
+                <div class="col-md-3">
+                    <h2><i style="color: rgb(31, 39, 146);" class="fa fa-facebook"></i><h2>
+                </div>
+                <div class="col-md-3">
+                    <h2><i style="color: rgb(82, 226, 154);" class="fa fa-instagram"></i><h2>
+                </div>
 
+                <div class="col-md-3">
+                    <h2><i style="color: rgb(62, 170, 233);" class="fa fa-twitter"></i><h2>
+                </div>
+                <div class="col-md-3">
+                    <a id="bruh"><h2><i style="color: rgb(253, 8, 8);" class="fa fa-youtube"></i><h2></h2></a>
+                </div>
+                
+            </div>
+            <div class="col-md-2">
+               
+            </div>
+    
+        </div>
+    </div>
+   
+    <h4 style="color: white; text-align:center; font-family: 'Oregano', cursive;">Copyright  &copy; Lewis Mutuma</h4>
 
 </body>
 </html>
